@@ -1,0 +1,99 @@
+/* Container styles */
+.navbar-container {
+  position: relative;
+  z-index: 20;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem; /* py-10 equivalent */
+}
+
+/* Logo section */
+.navbar-logo {
+  font-size: 2rem; /* text-2xl */
+  font-weight: bold;
+  color: #000;
+}
+
+/* Menu section */
+.navbar-menu {
+  display: none;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* gap-6 */
+}
+
+.navbar-item {
+  list-style: none;
+}
+
+.navbar-link {
+  display: inline-block;
+  padding: 0.5rem 1rem; /* py-2 px-4 */
+  font-size: 1.25rem; /* text-xl */
+  font-weight: bold;
+  color: #000;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #4ade80; /* text-secondary */
+}
+
+.navbar-link:hover::after {
+  content: '';
+  display: block;
+  width: 0.5rem; /* w-2 */
+  height: 0.5rem; /* h-2 */
+  background-color: #4ade80; /* bg-secondary */
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  margin-top: 0.5rem;
+}
+
+/* Button styles */
+.navbar-button {
+  background-color: #4ade80; /* bg-secondary */
+  color: white;
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  border-radius: 0.375rem; /* rounded-md */
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: #3cba6f; /* bg-secondary-dark */
+}
+
+/* Mobile Hamburger menu */
+.navbar-hamburger {
+  display: block;
+}
+
+.hamburger-icon {
+  font-size: 2.5rem; /* text-4xl */
+  color: #000;
+}
+
+/* Responsive styles */
+@media (min-width: 1024px) {
+  .navbar-menu {
+    display: block;
+  }
+
+  .navbar-hamburger {
+    display: none;
+  }
+}

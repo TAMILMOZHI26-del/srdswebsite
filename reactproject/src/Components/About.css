@@ -1,0 +1,154 @@
+/* Main Container */
+.main-container {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f9fdfd; /* Light off-white background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000; /* Black color */
+}
+
+/* App Name */
+.app-name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #48647e;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image Container */
+.image-container {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.app-image {
+    width: 150px; /* Adjust to your desired size */
+    height: auto;
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+}
+
+/* Navigation Bar */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between menu items */
+    margin-bottom: 40px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000; /* Black text */
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #48647e; /* Light blue on hover */
+}
+
+/* Buttons */
+.button-container {
+    margin: 20px 0;
+    display: flex;
+    gap: 30px; /* Space between buttons */
+    justify-content: center;
+}
+
+.action-button {
+    padding: 8px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: -5px; /* Rounded corners */
+    width: 270px;
+    height: 45px;
+}
+
+.action-button.donate {
+    background-color: #004d7a; /* Deep blue */
+    color: #fff; /* White text */
+}
+
+.action-button.donate:hover {
+    background-color: #000000; /* Darker blue */
+}
+
+.action-button.take-action {
+    background-color: #d9ff00; /* Neon greenish yellow */
+    color: #fffefe; /* Black text */
+}
+
+.action-button.take-action:hover {
+    background-color: #000000; /* Slightly darker neon green */
+}
+
+/* Social Media Links */
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between social media icons */
+    margin-top: 30px;
+}
+
+.social-media-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    background-color: #f0f0f0; /* Light gray background for the box */
+    border: 2px solid #000000; /* Border around the box */
+    border-radius: -10px; /* Rounded corners for the box */
+    padding: 35px; /* Space inside the box */
+    width: 100px; /* Fixed width for each box */
+    text-align: center; /* Center-align text and icon */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the box */
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 50px;
+    height: 40px;
+}
+
+.social-media-item:hover {
+    /* transform: scale(1.05); Slight zoom effect on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More shadow on hover */
+}
+
+.social-icon {
+    font-size: 28px; /* Slightly larger icons */
+    color: #000000; /* Match the app's theme */
+    margin-bottom: 8px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #000000; /* Light blue on hover */
+}
+
+.social-text {
+    font-size: 14px;
+    color: #000; /* Black text */
+}
